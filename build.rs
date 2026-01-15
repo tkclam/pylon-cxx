@@ -164,12 +164,12 @@ fn main() {
             assert_eq!(pylon_major_version, 6);
 
             // The following are for Pylon 6.1 and may need to be updated for other versions.
-            println!("cargo:rustc-link-lib=GenApi_gcc_v3_1_Basler_pylon");
-            println!("cargo:rustc-link-lib=GCBase_gcc_v3_1_Basler_pylon");
-            println!("cargo:rustc-link-lib=Log_gcc_v3_1_Basler_pylon");
-            println!("cargo:rustc-link-lib=MathParser_gcc_v3_1_Basler_pylon");
-            println!("cargo:rustc-link-lib=XmlParser_gcc_v3_1_Basler_pylon");
-            println!("cargo:rustc-link-lib=NodeMapData_gcc_v3_1_Basler_pylon");
+            println!("cargo:rustc-link-lib=GenApi_gcc_v3_5_Basler_pylon_v1");
+            println!("cargo:rustc-link-lib=GCBase_gcc_v3_5_Basler_pylon_v1");
+            println!("cargo:rustc-link-lib=Log_gcc_v3_5_Basler_pylon_v1");
+            println!("cargo:rustc-link-lib=MathParser_gcc_v3_5_Basler_pylon_v1");
+            println!("cargo:rustc-link-lib=XmlParser_gcc_v3_5_Basler_pylon_v1");
+            println!("cargo:rustc-link-lib=NodeMapData_gcc_v3_5_Basler_pylon_v1");
         }
     }
 
@@ -197,12 +197,12 @@ fn main() {
                 println!("cargo:rustc-link-search={}", lib_dir.display());
                 println!("cargo:rustc-link-lib=pylonbase");
                 println!("cargo:rustc-link-lib=pylonutility");
-                println!("cargo:rustc-link-lib=GenApi_gcc_v3_1_Basler_pylon");
-                println!("cargo:rustc-link-lib=GCBase_gcc_v3_1_Basler_pylon");
-                println!("cargo:rustc-link-lib=Log_gcc_v3_1_Basler_pylon");
-                println!("cargo:rustc-link-lib=MathParser_gcc_v3_1_Basler_pylon");
-                println!("cargo:rustc-link-lib=XmlParser_gcc_v3_1_Basler_pylon");
-                println!("cargo:rustc-link-lib=NodeMapData_gcc_v3_1_Basler_pylon");
+                println!("cargo:rustc-link-lib=GenApi_gcc_v3_5_Basler_pylon_v1");
+                println!("cargo:rustc-link-lib=GCBase_gcc_v3_5_Basler_pylon_v1");
+                println!("cargo:rustc-link-lib=Log_gcc_v3_5_Basler_pylon_v1");
+                println!("cargo:rustc-link-lib=MathParser_gcc_v3_5_Basler_pylon_v1");
+                println!("cargo:rustc-link-lib=XmlParser_gcc_v3_5_Basler_pylon_v1");
+                println!("cargo:rustc-link-lib=NodeMapData_gcc_v3_5_Basler_pylon_v1");
 
                 build
                     .flag("-std=c++14")
